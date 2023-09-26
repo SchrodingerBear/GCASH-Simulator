@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    /* Set a background color for better visibility */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.image-container {
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    /* Make the image container an inline block to center it */
+}
+
+#responsive-image {
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    /* Set the image to a lower z-index value */
+}
+
+.digit {
+    font-size: 70px;
+    font-weight: bold;
+    color: #E6F7FE;
+    text-align: center;
+    font-family: "Caros Soft Medium", "Neometeic Alt Medium", sans-serif;
+    /* Use custom font or fallback to a generic sans-serif font */
+    position: absolute;
+    top: 21.5%;
+    /* Place the number at the vertical center of the container */
+    left: 26%;
+    /* Place the number at the horizontal center of the container */
+    transform: translate(-50%, -50%);
+    /* Center the number both horizontally and vertically */
+    z-index: 5;
+    /* Set the number to a higher z-index value */
+}
